@@ -32,9 +32,7 @@
 *.tdo
 *.hd
 *.pdf
-!chain.jpg
-!englishweights.jpg
-!gudea.jpg
-!vitruvian-man.png
-!egyptian-cubit.jpg
-!pressuregauge.jpg
+*.png
+*.jpg
+!/graphics/AHU/*
+
