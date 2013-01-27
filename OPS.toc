@@ -1,0 +1,24 @@
+\select@language {english}
+\contentsline {chapter}{Document Control}{6}{chapter*.4}
+\contentsline {chapter}{Materials Control Department}{12}{chapter*.5}
+\contentsline {chapter}{Planning}{17}{chapter*.6}
+\contentsline {subsection}{\numberline {0.0.1}Resourcing}{22}{subsection.0.0.1}
+\contentsline {chapter}{Engineering}{27}{chapter*.7}
+\contentsline {section}{\numberline {0.1}Design Audit}{27}{section.0.1}
+\contentsline {chapter}{Site Works}{31}{chapter*.8}
+\contentsline {chapter}{Quality Assurance and Quality Control}{35}{chapter*.9}
+\contentsline {chapter}{Communication}{36}{chapter*.10}
+\contentsline {chapter}{Contractual}{39}{chapter*.11}
+\contentsline {chapter}{Cumulative Impact of other EIs and RFIs}{44}{chapter*.12}
+\contentsline {chapter}{Site Administration}{46}{chapter*.13}
+\contentsline {section}{\numberline {0.2}Size of the administration Office}{46}{section.0.2}
+\contentsline {section}{\numberline {0.3}What does the Department do?}{46}{section.0.3}
+\contentsline {subsection}{\numberline {0.3.1}IT Department}{47}{subsection.0.3.1}
+\contentsline {subsection}{\numberline {0.3.2}Visas, tickets and similar items}{47}{subsection.0.3.2}
+\contentsline {subsection}{\numberline {0.3.3}Payment of Salaries}{47}{subsection.0.3.3}
+\contentsline {subsection}{\numberline {0.3.4}Reporting}{47}{subsection.0.3.4}
+\contentsline {chapter}{Handover}{48}{chapter*.14}
+\contentsline {chapter}{Business edge}{50}{chapter*.15}
+\contentsline {subsection}{\numberline {0.3.5}What are we offering}{50}{subsection.0.3.5}
+\contentsline {section}{\numberline {0.4}Improving Production and Focusing on our Product}{51}{section.0.4}
+\contentsfinish 
