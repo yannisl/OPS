@@ -190,7 +190,6 @@
 \author{City Center Phase 3a \&3b}
 \publisher{AL HABTOOR-Specon}
 \date{January 2011} % Delete this line to display the current date
-\usepackage{fancyvrb}
 \usepackage{float}
 \usepackage{wrapfig}
 
@@ -212,12 +211,6 @@
 \usepackage{longtable}
 
 
-\begin{comment}
-
-
-\end{comment}
-%%% COMMENTED OUT
-\usepackage{inconsolata}  % alternative tt font
 
 %% Set some local commands and colors
 \usepackage{colortbl}
@@ -234,7 +227,8 @@
 \graphicspath{{graphics/}}
 
 
-\usepackage[some]{background}
+\usepackage[pages=some,placement=top]{background}
+
 \usepackage{soul}
 
 %% hack not to leave blank pages before chapters
@@ -285,7 +279,7 @@
 }
 
 % counter used in tables
-\newcounter{inc}{0}
+\newcounter{inc}
 \def\inc{\addtocounter{inc}{1}\theinc}
 
 \begin{document}
@@ -310,10 +304,9 @@
 \tableofcontents
 \listoffigures
 \listoftables
-%\chapter{Document Control}
-%\input{./manual/bibliographies}\end{document}
-\input{./Sections/document-control}
-\input{./Sections/MCD}
+
+\input{./sections/document-control}
+\input{./sections/MCD}
 \input{./Sections/planning-01}
 \input{./Sections/engineering}
 \input{./sections/siteworks}
@@ -321,7 +314,7 @@
 \input{./sections/communication}
 \input{./sections/contractual}
 \input{./sections/handover}
-\input{./sections/businessedge}
+%\input{./sections/businessedge}
 %\input{./manual/blog}
 
 
