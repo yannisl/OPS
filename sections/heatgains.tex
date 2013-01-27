@@ -1,0 +1,293 @@
+\ctable[]{rlcc}{
+\tnote{for the abstraction reaction,$\fam0 Mu+HX \rightarrow MuH+X$.}
+\tnote[b]{1 degree${} = \pi/180$ radians.}
+\tnote[c]{this is a particularly long note, showing that
+footnotes are set in raggedright mode as we don't like
+hyphenation in table footnotes.}
+}{ \FL
+& & $\fam0 H(Mu)+F_2$ & $\fam0 H(Mu)+Cl_2$ \ML
+&$\beta$(H) & $80.9^\circ$\tmark[b] & $83.2^\circ$ \NN
+&$\beta$(Mu) & $86.7^\circ$ & $87.7^\circ$ \LL
+}
+
+
+\ctable[]{c>{\raggedright}Xc>{\raggedright}X}{
+\tnote{footnotes are placed under the table}
+}{ \FL
+\multicolumn{4}{c}{Example using tabularx} \ML
+\multicolumn{2}{c}{Multicolumn entry!} & THREE & FOUR \NN
+\cmidrule(r){1-2}\cmidrule(rl){3-3}\cmidrule(l){4-4}
+one&
+The width of this column depends on the width of the
+table.\tmark &
+three&
+Column four will act in the same way as
+column two, with the same width. \LL
+}
+
+
+
+
+\lstloadlanguages{Pascal, Ada}
+\lstset{language=Pascal,commentstyle=\scriptsize}
+A "for" loop in C:
+\begin{lstlisting}[keywordstyle=\underbar]
+int sum;
+int i; /*for loop variable*/
+sum=0;
+for (i=0;i<n;i++) {
+  sum += a[i];
+}
+\end{lstlisting}
+Now the same loop in Ada:
+\begin{lstlisting}[language=Ada]
+Sum: Integer;
+-- no decl for I necessary
+Sum := 0;
+for I in 1..N loop
+Sum := Sum + A(I);
+end loop;
+\end{lstlisting}
+
+
+\appendix{Common Requirements}
+\section{Highlighting text}
+
+
+
+\newenvironment{Description}
+{\begin{list}{}{\let\makelabel\Descriptionlabel
+\setlength\labelwidth{40pt}%
+\setlength\leftmargin{\labelwidth+\labelsep}}}%
+{\end{list}}
+\newcommand*\Descriptionlabel[1]{\textsf{#1:}\hfil}
+\begin{Description}
+\item[Description]
+Returns from a function. If issued at top level,
+the interpreter simply terminates, just as if
+end of input had been reached.
+\item[Errors] None.
+\item[Return values]
+\mbox{}\\
+Any arguments in effect are passed back to the
+caller.
+\end{Description}
+
+
+\chapter{Multicolumn Layouts}
+\begin{multicols}{2}
+Here is some text to be distributed over
+several columns. 
+narrow try typesetting ragged right.
+\lipsum
+\end{multicols}
+
+\chapter{Climate}
+The variations in temperature, humidity and wind occurring throughout the world are due
+to several factors the integration of which, for a particular locality, provides the climate
+experienced. There is, first, a seasonal change in climatic conditions, varying with latitude
+and resulting from the fact that, because the earth's axis of rotation is tilted at about 23.5 ~
+to its axis of revolution about the sun, the amount of solar energy received at a particular
+place on the earth's surface alters throughout the year. The geography of the locality
+provides a second factor, influential in altering climate within the confines imposed by the
+seasonal variation.
+
+Figure 5.1 illustrates the geometrical considerations which show that, at a particular
+latitude, the earth receives less solar radiation in winter than it does in summer. The
+importance of this in its effect on the seasons stems from the fact that, for all practical
+purposes, the sun is the sole supplier of energy to the earth.
+
+The geography of a place determines how much solar energy is absorbed by the earth,
+how much is stored and how readily it is released to the atmosphere. The atmosphere is
+comparatively transparent to the flux of radiant solar energy (termed \emph{insolation\/}) but the
+land masses which receive the energy are opaque to it and are fairly good absorbers of it,
+although this depends on the reflectivity of the surface. This means that the thermal energy
+from the sun warms up land surfaces on which it falls. Some of this energy travels inwards
+and is stored in the upper layers of the earth's crust; some is convected to the atmosphere
+and some is re-radiated back to space, but at a longer wavelength (about 10 micrometres),
+since its mean surface temperature is very much less than that of the sun. Four-fifths of the
+earth's surface is water, not land, and water behaves in a different fashion as a receiver of
+insolation, being partially transparent to it; consequently, the energy is absorbed by the
+water in depth, with the result that its surface temperature does not reach such a high value
+during the daytime. On the other hand, at night, heat is lost from the land to the sky much
+more rapidly since less was stored in its shallow upper crust than was absorbed and stored
+in the deeper layers of water. The result is that land-surface temperatures tend to be lower
+at night than are water-surface temperatures. It is evident from this that places in the
+middle of large land masses will tend to have a more extreme annual variation of temperature
+than will islands in a large sea. Thus, the climate of places on the same latitude can vary
+enormously. To realise this we have but to compare the temperate seasons experienced in
+the British Isles with the extremes suffered in Central Asia and Northern Canada at about
+the same latitude. The exchanges of radiant energy cited above as responsible for the
+differences in maritime and continental climates are complicated somewhat by the amount
+of cloud. Cloud cover acts as an insulating barrier between the earth and its environment;
+not only does it reflect back to outer space a good deal of the solar energy incident upon
+it but it also stops the passage of the low-frequency infra-red radiation which the earth
+emits. In addition, the quantity of carbon dioxide in the atmosphere reduces the emission
+of infra-red radiation. Mountain ranges also play a part in altering the simple picture,
+presented above, of a radiation balance.
+
+
+The effect of the unequal heating of land and sea is to produce air movement. This air
+movement results in adiabatic expansions and compressions taking place in the atmosphere,
+with consequent decreases and increases respectively in air temperature. These temperature
+changes, in turn, may result in cloud formation as values below the dew point are reached.
+One overall aspect of the thermal radiation balance is prominent in affecting our weather
+and in producing permanent features of air movement such as the Trade Winds and the
+Doldrums. This is the fact that, for higher latitudes, the earth loses more heat to space by
+radiation than it receives from the sun but, for lower latitudes, the reverse is the case. The
+result is that the lower latitudes heat up and the higher ones cool down. This produces a
+thermal up-current from the equatorial regions and a corresponding down-current in the
+higher latitudes. While this is true for an ideal atmosphere, the fact that the earth rotates
+and that other complicating factors are present means that the true behaviour is quite
+involved and not yet fully understood.
+
+
+\section{ Winds}
+It might be thought that wind flowed from a region of high pressure to one of low pressure,
+following the most direct path. This is not so. There are, in essence, three things which
+combine to produce the general pattern of wind flow over the globe. This pattern is
+complicated further by local effects such as the proximity of land and sea, the presence of
+mountains and so on. However, the three overall influences are:
+
+
+(i) the unequal heating of land and sea;
+
+(2)the deviation of the wind due to forces arising from the rotation of the earth about its
+axis;
+(iii) the conservation of angular momentum~a factor occurring because the linear velocity
+of air at low latitudes is less than at high latitudes.
+The general picture of wind distribution is as follows. Over equatorial regions the weather
+is uniform; the torrid zone is an area of very light and variable winds with frequent calms,
+cloudy skies and violent thunderstorms. These light and variable winds are called the
+'Doldrums'. Above and below the Doldrums, up to 30 ~ north and south, are the Trade
+Winds, which blow with considerable steadiness, interrupted by occasional storms. Land
+and sea breezes (mentioned later) also affect their behaviour.
+
+Above and below 30 ~ of latitude, as far as the sub-polar regions, the Westerlies blow.
+They are the result of the three factors mentioned earlier, but their behaviour is very much
+influenced by the development of regions of low pressure, termed cyclones, producing
+storms of the pattern familiar in temperate zones. This cyclonic influence means that the
+weather is much less predictable in the temperate zones, unless the place in question is in
+a very large land mass--for example in Asia or in North America. In temperate areas
+consisting of a mixture of islands, broken coastline and sea, as in north-western Europe,
+cyclonic weather is the rule and long-term behaviour difficult to forecast. The whole
+matter is much complicated by the influence of warm and cold currents of water.
+
+\section{Mist and fog}
+For condensation to occur in the atmosphere the presence is required of small, solid
+particles termed condensation nuclei. Any small solid particle will not do; it is desirable
+that the particles should have some affinity for water. Hygroscopic materials such as salt
+and sulphur dioxide then, play some part in the formation of condensation. The present
+opinion appears to be that the products of combustion play an important part in the provision
+of condensation nuclei and that the size and number of these nuclei vary tremendously.
+
+Over industrial areas there may be several million per cubic centimetre of air whereas, over
+sea, the density may be as low as a few hundred per cubic centimetre.
+
+These nuclei play an important part in the formation of rain as well as fog, but for fog
+to form the cooling of moist air must also take place. There are two common sorts of fog:
+
+advection fog, formed when a moist sea breeze blows inland over a cooler land surface,
+and radiation fog. Radiation fog forms when moist air is cooled by contact with ground
+which has chilled as the result of heat loss by radiation to an open sky. Cloud cover
+discourages such heat loss and, inhibiting the fall of surface temperature, makes fog formation
+less likely. Still air is also essential; any degree of wind usually dissipates fog fairly
+rapidly. Fog has a tendency to occur in the vicinity of industrial areas owing to the local
+atmosphere being rich in condensation nuclei. Under these circumstances, the absence of
+wind is helpful in keeping up the concentration of such nuclei. The dispersion of the nuclei
+is further impeded by the presence of a temperature inversion, that is, by a rise in air
+temperature with increase of height, instead of the reverse. This discourages warm air from
+rising and encourages the products of combustion and fog to persist, other factors being
+helpful.
+
+Long-wave thermal radiation, ILW, directed to the sky at night can be considered as
+radiation to a black body at a temperature of absolute zero. This is modified by a correction
+factor to account for variations in the absorption by water vapour in the lower reaches of
+the atmosphere. This changes as the amount of cloud cover and the area of the sky seen by
+the surface varies. According to Brunt (1932) the absorption effect can be accounted for by
+a vapour correction factor, $K$, expressed by
+
+\begin{equation}
+K = 0.56 - 0.08 \sqrt{p_s}
+\end{equation}
+
+where Ps is the vapour pressure of the air in millibars. The amount of sky seen by a surface
+is given by an angle factor, B,
+
+\begin{equation}
+B = 0.5(1 + \cos \delta)
+\end{equation}
+
+where $\delta$  is the acute angle between the surface and the horizontal. Thus for a flat roof 8 =
+0 and B = 1, whereas for a wall 8 = 90 ~ and B = 0.5. Cloud cover can play a part as well
+and if we assume it is wholly effective in suppressing loss from the surface to outer space,
+a cloud cover factor, C, can be introduced. Table 5.1 gives typical, approximate, average
+cloud cover factors for Kew, based on data recorded for the amount of bright sunshine
+received between sunrise and sunset in relation to the maximum amount of sunshine that
+could be received during the same period of the day.
+
+\begin{minipage}{5in}
+\begin{tabular}{lllllllllllll}
+\toprule
+Month &Jan &Feb &Mar &Apr &May &Jun &Jul &Aug &Sep &Oct &Nov &Dec\\
+\midrule
+C &0.2 &0.2   &0.3   &0.4   &0.4  &0.4  &0.4  &0.4  &0.4  &0.3 &0.2 &0.2\\
+\bottomrule
+\end{tabular}
+\end{minipage}
+\def\badcheck{A penalty has been added because your
+check to us was not honored by your bank.\par}
+\def\cheater{A penalty of 50\% of the underpaid tax
+has been added for fraud.\par}
+
+\chapter{Solar Heat gains}
+
+\section{The composition of heat gains}
+
+Heat gains are either sensible, tending to cause a rise in air temperature, or latent, causing
+an increase in moisture content. In comfort air conditioning sensible gains originate from
+the following sources:
+
+(i) Solar radiation through windows, walls and roofs.
+
+(ii) Transmission through the building envelope and by the natural infiltration of warmer
+air from outside.
+
+(iii) People.
+
+(iv) Electric lighting.
+
+
+Latent heat gains are due to the presence of the occupants and the natural infiltration of
+more humid air from outside.
+
+In the case of industrial air conditioning there may be additional sensible and latent heat
+gains from the processes carried out.
+
+All the above sources of heat gain are well researched but a measure of uncertainty is
+introduced by the random nature of some, such as the varying presence of people and the
+way in which electric lights are switched. The thermal inertia of the building structure also
+introduces a problem when calculating the sensible heat gain arising from solar radiation.
+It follows that a precise determination of heat gains is impossible. Nevertheless, it is vital
+that the design engineer should be able to calculate the heat gains with some assurance and
+this can be done when generally accepted methods of calculation are followed, supported
+by sound common sense. The following text discusses and describes such methods.
+
+
+\section{The physics of solar radiation}
+
+The sun radiates energy as a black body having a surface temperature of about 6000°C
+over a spectrum of wavelengths from 300 to 470 nm. Nine per cent of the energy is in the
+ultra-violet region but 91 per cent of the energy is in the visible part of the spectrum (380-
+780 nm) and in the infra-red. Figure 7.1 shows a typical spectral distribution of the energy
+reaching the surface of the earth. The peak intensity of the solar energy reaching the upper
+limits of the atmosphere of the earth is about 2200 W mV2 at 480 nm but the average total
+termed the \emph{solar constant}, is 1367  $W\/  m^{-2}$ \sidenote{Use SI units for consistency}, according to Iqbal(1983). The orbit of the earth
+about the sun is an ellipse and the earth is slightly closer to the sun in January than it is in
+July. Consequently the solar irradiation\index{solar irradiation}  has a maximum value of 1413 W mP2 in January
+and a minimum of 1332 W m-2 in July.
+
+A total of only about 1025 W m-2 reaches the surface of the earth when the sun is
+vertically overhead in a cloudless sky. Of this figure, about 945 W m-2  is by radiation
+received directly from the sun, the remainder being solar radiation received indirectly from
+the sky.
