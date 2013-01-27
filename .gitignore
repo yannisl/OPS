@@ -31,9 +31,4 @@
 *.xdy
 *.tdo
 *.hd
-*.pdf
-*.png
-*.jpg
 *.out
-!/OPS/graphics/AHU/*.png
-!/graphics/AHU/*/
