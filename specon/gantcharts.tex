@@ -1,0 +1,92 @@
+\chapter{More complicated Gantt Charts}
+The Gantt Charts basic style has been developed by 
+   \url{http://martin-kumm.de/tex_gantt_package.php}, this has been modified s;ightly to keep with the idea of simplicity. For example there is no way I would have used a crosshatch as background. 
+\sidenote{Most of the Gantt charts are analytically thin, too simple, and lack substantive detail. The charts should be more intense. At a minimum, the charts should be annotated--for example, with to-do lists at particular points on the grid. Costs might also be included in appropriate cells of the table. About half the charts show their thin data in heavy grid prisons. For these charts the main visual statement is the administrative grid prison, not the actual tasks contained by the grid. See the discussion at Tufte \url{http://www.edwardtufte.com/bboard/q-and-a-fetch-msg?msg_id=000076} }
+
+Do not use background patterns, like a crosshatch or diagonal lines, instead of colors. They distract.
+Background patterns in information graphics are evil. 
+
+How could all those big projects in the last 3,000 years ever been done without a Gantt chart? Very complex things can be done without the aid of the central authority of the Gantt chart.
+
+\newcommand{\gbar}[3]{\ganttbar[crosshatch, color=orange]{#1}{#2}{#3}}
+
+\definecolor{LightGray}{rgb}{0.7,0.7,0.7}
+ \begin{gantt}[xunitlength=0.4cm,  fontsize=\small, drawledgerline=false]{11}{16}
+    \begin{ganttitle}
+      \titleelement{Aug}{4}
+      \titleelement{Sep}{4}
+      \titleelement{Oct}{4}
+      \titleelement{Nov}{4}
+    \end{ganttitle}
+   \begin{ganttitle}
+         \numtitle{1}{1}{4}{1}
+\numtitle{1}{1}{4}{1}
+\numtitle{1}{1}{4}{1}
+\numtitle{1}{1}{4}{1}
+
+   \end{ganttitle}
+
+
+% activities are plotted here
+    \ganttbar[crosshatch, color=orange]{Physical completion \protect{[\ref{g:test}}] }{0}{2}
+    \ganttbarcon[crosshatch, color=orange]{Hydrotest}{2}{0.2}
+    \ganttbarcon[crosshatch, color=orange]{Snagging}{2.2}{0.5}
+    \ganttbar[crosshatch, color=orange]{Electrical}{2}{2}
+    \ganttbar[crosshatch, color=orange]{Podium Completion}{1}{4}
+    \ganttbar[crosshatch, color=orange]{Flushing}{1}{4}
+    \ganttbar[crosshatch, color= orange]{Qatar Cool Inspection}{1}{4}
+    \ganttbar[crosshatch, color= orange]{Qatar Cool connection}{4}{1.3}
+    \gbar{Handover}{4}{1.3}
+  \end{gantt}
+
+Here is a more complicated one
+
+%\begin{gantt}[xunitlength=0.3cm,fontsize=\small,titlefontsize=\small,drawledgerline=true]{10}{48}
+   
+Package Description
+
+In the following you will find a short description of environments and commands: 
+
+The gantt environment draws the canvas of a gantt figure (realized as tikzpicture)
+The usage is \ begin{gantt}[...]{no of Tasks to plot}{no of time slots}
+The optional argument [...] can be filled in a key=value syntax, using one or more of the following keys:
+
+xunitlength - length of one time slot (default: 1 cm)
+fontsize - fontsize of labels (default: |\normalsize|)
+titlefontsize - fontsize of title section (default: |\small|)
+drawledgerline - Switch to enable/disable the drawing of horizontal ledger lines (default value: false)
+
+ganttitle is the environment for drawing the title section
+
+
+{titleelement} draws one element of the title
+usage: \ titleelement{label}{length}
+
+
+\begin{verbatim}
+
+|\numtitle| draws a numbered sequence of title elements
+usage: \numtitle{start number}{increment}{end number}{length of each title element}
+
+\ganttbar draws a single, unconnected bar for representing a task
+usage: \ganttbar[pattern]{label}{start}{length}
+where the optional pattern argument is a tikz pattern, nice patterns for tasks are: 
+north west lines (default), north east lines, crosshatch, crosshatch dots, grid, ...
+
+\ganttcon draws an arrow between to bars with specified coordinates
+usage: \ganttbar{startx}{starty}{endx}{endy}
+
+\ganttbarcon draws a single bar *and* connects the bar with the previous bar for consecutive tasks
+usage: \ganttbar[pattern]{label}{start}{length}
+where the optional pattern argument is a tikz pattern, nice patterns for tasks are: 
+north west lines (default), north east lines, crosshatch, crosshatch dots, grid, ...
+
+\ganttgroup draws a bar to group tasks
+usage: \ganttgroup{label}{start}{length}
+\end{verbatim}
+
+\section{Physical completion}
+
+\label{g:test}
+
+These are notes for the gantt chart

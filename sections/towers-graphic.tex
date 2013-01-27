@@ -1,0 +1,497 @@
+\chapter{Towers}\label{sec:towers1}\index{towers}
+\index{fonts|see{typefaces}}
+
+\newthought{The Hotel Towers can be completed by October 30th}\sidenote{Completion meaning, substantial completion and preliminary operation and testing where possible}. Most current problems have mostly been resolved, although there are still issues with ID and EIs.  The Merweb Tower - which always - lagged behind the other Towers continues to do so. This Tower will need a concerted effort and additional personnel to meet the deadline. We have factored this into our completion expectations.
+
+Currently Tower focus is on closing walls and ceilings. 
+
+
+
+\newpage
+\small
+\begin{tabular}{ll}
+\toprule 
+\multicolumn{2}{c}{\bf Rotana}\\
+Level & Planned date\\
+\midrule
+
+Lvl 40  & 24.07.10\\
+Lvl 39  & 24.07.10\\
+Lvl 38  & test\\
+Lvl 37  & test\\
+Lvl 36  & test\\
+Lvl 35  & test\\
+Lvl 34  & test\\
+Lvl 33  & test\\
+Lvl 32  & test\\
+Lvl 31  & test\\
+Lvl 30  & test\\
+Lvl 29  & test\\
+Lvl 28  & test\\
+Lvl 27  & test\\
+Lvl 26  & test\\
+Lvl 25  & test\\
+Lvl 24  & test\\
+Lvl 23  & test\\
+Lvl 22  & test\\
+Lvl 21  & test\\
+Lvl 20  & test\\
+Lvl 19  & test\\
+Lvl 18  & test\\
+Lvl 17  & test\\
+Lvl 16  & test\\
+Lvl 15  & test\\
+Lvl 14  & test\\
+Lvl 13  & test\\
+Lvl 12  & test\\
+Lvl 11  & test\\
+Lvl 10  & test\\
+Lvl 09  & test\\
+Lvl 08  & test\\
+\bottomrule
+\end{tabular}
+\normalsize
+
+
+
+\begin{marginfigure}
+The Tower can be represented by a series of squares, which denote an activity. Green is done and white is not done. There is no need to use intermediate colors. they just detract from the visual information.
+\vspace{1cm}
+
+\definecolor{green1}{rgb}{0,0.9,0}
+\definecolor{green2}{rgb}{0,0.85,0}
+\definecolor{green3}{rgb}{0,0.75,0}
+\definecolor{green4}{rgb}{0,0.65,0}
+
+\begin{tikzpicture}[scale=0.8]
+\draw[fill=green] (0,0) rectangle (0.5,0.5);
+\draw[fill=green] node [anchor=south east]{Walls completed};
+\draw(0,1pt);
+\draw[fill=green] node [anchor=south east]{Walls completed};
+\end{tikzpicture}
+
+\begin{tikzpicture}[scale=0.8]
+\draw node [anchor=south east ]{\footnotesize{Level 39}};
+\draw[fill=green] (0,0) rectangle (0.5,0.5);
+\draw[fill=green1]  (0.6,0.0) rectangle (1.1,0.5) ;
+\draw[fill=green2]  (0.6+0.6,0.0) rectangle (1.7,0.5) ;
+\draw[fill=green3]  (3*0.6,0.0) rectangle (2.3,0.5) ;
+\draw[fill=green4]  (4*0.6,0.0) rectangle (2.9,0.5) ;
+\draw(0,1pt);
+\end{tikzpicture}
+
+
+\begin{tikzpicture}[scale=0.8]
+\draw[fill=green] node [anchor=south east]{Level 38};
+\draw[fill=green] (0,0) rectangle (0.5,0.5);
+\draw[fill=green]  (0.6,0.0) rectangle (1.1,0.5) ;
+\draw[fill=green] (0.6+0.6,0.0) rectangle (1.7,0.5) ;
+\draw[fill=green]  (3*0.6,0.0) rectangle (2.3,0.5) ;
+\draw[fill=green]  (4*0.6,0.0) rectangle (2.9,0.5) ;
+\draw(0,1pt);
+% second row
+\end{tikzpicture}
+
+
+\begin{tikzpicture}[scale=0.8]
+\draw node [anchor=south east]{Level 37};
+\draw (0,0) rectangle (0.5,0.5);
+\draw  (0.6,0.0) rectangle (1.1,0.5) ;
+\draw  (0.6+0.6,0.0) rectangle (1.7,0.5) ;
+\draw[fill=green]  (3*0.6,0.0) rectangle (2.3,0.5) ;
+\draw[fill=green]  (4*0.6,0.0) rectangle (2.9,0.5) ;
+% second row
+\end{tikzpicture}
+
+
+\begin{tikzpicture}[scale=0.8]
+\draw node [anchor=south east]{Level 36};
+\draw (0,0) rectangle (0.5,0.5);
+\draw  (0.6,0.0) rectangle (1.1,0.5) ;
+\draw  (0.6+0.6,0.0) rectangle (1.7,0.5) ;
+\draw[fill=green]  (3*0.6,0.0) rectangle (2.3,0.5) ;
+\draw[fill=green]  (4*0.6,0.0) rectangle (2.9,0.5) ;
+% second row
+\end{tikzpicture}
+
+\newcommand{\done}{\draw[fill=green]}
+
+\begin{tikzpicture}[scale=0.8]
+\draw node [anchor=south east]{Level 35};
+\draw (0,0) rectangle (0.5,0.5);
+\draw  (0.6,0.0) rectangle (1.1,0.5) ;
+\draw  (0.6+0.6,0.0) rectangle (1.7,0.5) ;
+\done  (3*0.6,0.0) rectangle (2.3,0.5) ;
+\draw[fill=green]  (4*0.6,0.0) rectangle (2.9,0.5) ;
+% second row
+\end{tikzpicture}
+
+\begin{tikzpicture}[scale=0.8]
+\draw node [anchor=south east]{Level 34};
+\draw (0,0) rectangle (0.5,0.5);
+\draw  (0.6,0.0) rectangle (1.1,0.5) ;
+\draw  (0.6+0.6,0.0) rectangle (1.7,0.5) ;
+\draw[fill=green]  (3*0.6,0.0) rectangle (2.3,0.5) ;
+\draw[fill=green]  (4*0.6,0.0) rectangle (2.9,0.5) ;
+% second row
+\end{tikzpicture}
+
+\begin{tikzpicture}[scale=0.8]
+\draw node [anchor=south east]{Level 33};
+\draw (0,0) rectangle (0.5,0.5);
+\draw  (0.6,0.0) rectangle (1.1,0.5) ;
+\draw  (0.6+0.6,0.0) rectangle (1.7,0.5) ;
+\draw[fill=green]  (3*0.6,0.0) rectangle (2.3,0.5) ;
+\draw[fill=green]  (4*0.6,0.0) rectangle (2.9,0.5) ;
+% second row
+\end{tikzpicture}
+
+\begin{tikzpicture}[scale=0.8]
+\draw node [anchor=south east]{Level 32};
+\draw (0,0) rectangle (0.5,0.5);
+\draw  (0.6,0.0) rectangle (1.1,0.5) ;
+\draw  (0.6+0.6,0.0) rectangle (1.7,0.5) ;
+\draw[fill=green]  (3*0.6,0.0) rectangle (2.3,0.5) ;
+\draw[fill=green]  (4*0.6,0.0) rectangle (2.9,0.5) ;
+% second row
+\end{tikzpicture}
+
+\begin{tikzpicture}[scale=0.8]
+\draw node [anchor=south east]{Level 31};
+\draw (0,0) rectangle (0.5,0.5);
+\draw  (0.6,0.0) rectangle (1.1,0.5) ;
+\draw  (0.6+0.6,0.0) rectangle (1.7,0.5) ;
+\draw[fill=green]  (3*0.6,0.0) rectangle (2.3,0.5) ;
+\draw[fill=green]  (4*0.6,0.0) rectangle (2.9,0.5) ;
+% second row
+\end{tikzpicture}
+
+
+\begin{tikzpicture}[scale=0.8]
+\draw node [anchor=south east]{Level 30};
+\draw (0,0) rectangle (0.5,0.5);
+\draw  (0.6,0.0) rectangle (1.1,0.5) ;
+\draw  (0.6+0.6,0.0) rectangle (1.7,0.5) ;
+\draw[fill=green]  (3*0.6,0.0) rectangle (2.3,0.5) ;
+\draw[fill=green]  (4*0.6,0.0) rectangle (2.9,0.5) ;
+% second row
+\end{tikzpicture}
+
+
+
+\begin{tikzpicture}[scale=0.8]
+\draw node [anchor=south east]{Level 29};
+\draw (0,0) rectangle (0.5,0.5);
+\draw  (0.6,0.0) rectangle (1.1,0.5) ;
+\draw  (0.6+0.6,0.0) rectangle (1.7,0.5) ;
+\draw[fill=green]  (3*0.6,0.0) rectangle (2.3,0.5) ;
+\draw[fill=green]  (4*0.6,0.0) rectangle (2.9,0.5) ;
+% second row
+\end{tikzpicture}
+
+\begin{tikzpicture}[scale=0.8]
+\draw node [anchor=south east]{Level 28};
+\draw (0,0) rectangle (0.5,0.5);
+\draw  (0.6,0.0) rectangle (1.1,0.5) ;
+\draw  (0.6+0.6,0.0) rectangle (1.7,0.5) ;
+\draw[fill=green]  (3*0.6,0.0) rectangle (2.3,0.5) ;
+\draw[fill=green]  (4*0.6,0.0) rectangle (2.9,0.5) ;
+% second row
+\end{tikzpicture}
+
+\begin{tikzpicture}[scale=0.8]
+\draw node [anchor=south east]{Level 27};
+\draw (0,0) rectangle (0.5,0.5);
+\draw  (0.6,0.0) rectangle (1.1,0.5) ;
+\draw  (0.6+0.6,0.0) rectangle (1.7,0.5) ;
+\draw[fill=green]  (3*0.6,0.0) rectangle (2.3,0.5) ;
+\draw[fill=green]  (4*0.6,0.0) rectangle (2.9,0.5) ;
+% second row
+\end{tikzpicture}\\
+
+
+\begin{tikzpicture}[scale=0.8]
+\draw node [anchor=south east]{Level 26};
+\draw (0,0) rectangle (0.5,0.5);
+\draw  (0.6,0.0) rectangle (1.1,0.5) ;
+\draw  (0.6+0.6,0.0) rectangle (1.7,0.5) ;
+\draw[fill=green]  (3*0.6,0.0) rectangle (2.3,0.5) ;
+\draw[fill=green]  (4*0.6,0.0) rectangle (2.9,0.5) ;
+% second row
+\end{tikzpicture}
+
+
+\begin{tikzpicture}[scale=0.8]
+\draw node [anchor=south east]{Level 25};
+\draw (0,0) rectangle (0.5,0.5);
+\draw  (0.6,0.0) rectangle (1.1,0.5) ;
+\draw  (0.6+0.6,0.0) rectangle (1.7,0.5) ;
+\draw[fill=green]  (3*0.6,0.0) rectangle (2.3,0.5) ;
+\draw[fill=green]  (4*0.6,0.0) rectangle (2.9,0.5) ;
+% second row
+\end{tikzpicture}
+
+
+
+\begin{tikzpicture}[scale=0.8]
+\draw node [anchor=south east]{Level 24};
+\draw (0,0) rectangle (0.5,0.5);
+\draw  (0.6,0.0) rectangle (1.1,0.5) ;
+\draw  (0.6+0.6,0.0) rectangle (1.7,0.5) ;
+\draw[fill=green]  (3*0.6,0.0) rectangle (2.3,0.5) ;
+\draw[fill=green]  (4*0.6,0.0) rectangle (2.9,0.5) ;
+% second row
+\end{tikzpicture}
+
+\begin{tikzpicture}[scale=0.8]
+\draw node [anchor=south east]{Level 23};
+\draw (0,0) rectangle (0.5,0.5);
+\draw  (0.6,0.0) rectangle (1.1,0.5) ;
+\draw  (0.6+0.6,0.0) rectangle (1.7,0.5) ;
+\draw[fill=green]  (3*0.6,0.0) rectangle (2.3,0.5) ;
+\draw[fill=green]  (4*0.6,0.0) rectangle (2.9,0.5) ;
+% second row
+\end{tikzpicture}
+
+\begin{tikzpicture}[scale=0.8]
+\draw node [anchor=south east]{Level 22};
+\draw (0,0) rectangle (0.5,0.5);
+\draw  (0.6,0.0) rectangle (1.1,0.5) ;
+\draw  (0.6+0.6,0.0) rectangle (1.7,0.5) ;
+\draw[fill=green]  (3*0.6,0.0) rectangle (2.3,0.5) ;
+\draw[fill=green]  (4*0.6,0.0) rectangle (2.9,0.5) ;
+% second row
+\end{tikzpicture}\\
+
+
+\begin{tikzpicture}[scale=0.8]
+\draw node [anchor=south east]{Level 21};
+\draw (0,0) rectangle (0.5,0.5);
+\draw  (0.6,0.0) rectangle (1.1,0.5) ;
+\draw  (0.6+0.6,0.0) rectangle (1.7,0.5) ;
+\draw[fill=green]  (3*0.6,0.0) rectangle (2.3,0.5) ;
+\draw[fill=green]  (4*0.6,0.0) rectangle (2.9,0.5) ;
+% second row
+\end{tikzpicture}
+
+
+\begin{tikzpicture}[scale=0.8]
+\draw node [anchor=south east]{Level 20};
+\draw (0,0) rectangle (0.5,0.5);
+\draw  (0.6,0.0) rectangle (1.1,0.5) ;
+\draw  (0.6+0.6,0.0) rectangle (1.7,0.5) ;
+\draw[fill=green]  (3*0.6,0.0) rectangle (2.3,0.5) ;
+\draw[fill=green]  (4*0.6,0.0) rectangle (2.9,0.5) ;
+% second row
+\end{tikzpicture}
+
+
+
+\begin{tikzpicture}[scale=0.8]
+\draw node [anchor=south east]{Level 19};
+\draw (0,0) rectangle (0.5,0.5);
+\draw  (0.6,0.0) rectangle (1.1,0.5) ;
+\draw  (0.6+0.6,0.0) rectangle (1.7,0.5) ;
+\draw[fill=green]  (3*0.6,0.0) rectangle (2.3,0.5) ;
+\draw[fill=green]  (4*0.6,0.0) rectangle (2.9,0.5) ;
+% second row
+\end{tikzpicture}
+
+\begin{tikzpicture}[scale=0.8]
+\draw node [anchor=south east]{Level 18};
+\draw (0,0) rectangle (0.5,0.5);
+\draw  (0.6,0.0) rectangle (1.1,0.5) ;
+\draw  (0.6+0.6,0.0) rectangle (1.7,0.5) ;
+\draw[fill=green]  (3*0.6,0.0) rectangle (2.3,0.5) ;
+\draw[fill=green]  (4*0.6,0.0) rectangle (2.9,0.5) ;
+% second row
+\end{tikzpicture}
+
+\begin{tikzpicture}[scale=0.8]
+\draw node [anchor=south east]{Level 17};
+\draw (0,0) rectangle (0.5,0.5);
+\draw  (0.6,0.0) rectangle (1.1,0.5) ;
+\draw  (0.6+0.6,0.0) rectangle (1.7,0.5) ;
+\draw[fill=green]  (3*0.6,0.0) rectangle (2.3,0.5) ;
+\draw[fill=green]  (4*0.6,0.0) rectangle (2.9,0.5) ;
+% second row
+\end{tikzpicture}\\
+
+
+\begin{tikzpicture}[scale=0.8]
+\draw node [anchor=south east]{Level 16};
+\draw (0,0) rectangle (0.5,0.5);
+\draw  (0.6,0.0) rectangle (1.1,0.5) ;
+\draw  (0.6+0.6,0.0) rectangle (1.7,0.5) ;
+\draw[fill=green]  (3*0.6,0.0) rectangle (2.3,0.5) ;
+\draw[fill=green]  (4*0.6,0.0) rectangle (2.9,0.5) ;
+% second row
+\end{tikzpicture}
+
+
+\begin{tikzpicture}[scale=0.8]
+\draw node [anchor=south east]{Level 15};
+\draw (0,0) rectangle (0.5,0.5);
+\draw  (0.6,0.0) rectangle (1.1,0.5) ;
+\draw  (0.6+0.6,0.0) rectangle (1.7,0.5) ;
+\draw[fill=green]  (3*0.6,0.0) rectangle (2.3,0.5) ;
+\draw[fill=green]  (4*0.6,0.0) rectangle (2.9,0.5) ;
+% second row
+\end{tikzpicture}
+
+
+
+\begin{tikzpicture}[scale=0.8]
+\draw node [anchor=south east]{Level 14};
+\draw (0,0) rectangle (0.5,0.5);
+\draw  (0.6,0.0) rectangle (1.1,0.5) ;
+\draw  (0.6+0.6,0.0) rectangle (1.7,0.5) ;
+\draw[fill=green]  (3*0.6,0.0) rectangle (2.3,0.5) ;
+\draw[fill=green]  (4*0.6,0.0) rectangle (2.9,0.5) ;
+% second row
+\end{tikzpicture}
+
+\begin{tikzpicture}[scale=0.8]
+\draw node [anchor=south east]{Level 13};
+\draw (0,0) rectangle (0.5,0.5);
+\draw  (0.6,0.0) rectangle (1.1,0.5) ;
+\draw  (0.6+0.6,0.0) rectangle (1.7,0.5) ;
+\draw[fill=green]  (3*0.6,0.0) rectangle (2.3,0.5) ;
+\draw[fill=green]  (4*0.6,0.0) rectangle (2.9,0.5) ;
+% second row
+\end{tikzpicture}
+
+\begin{tikzpicture}[scale=0.8]
+\draw node [anchor=south east]{Level 12};
+\draw (0,0) rectangle (0.5,0.5);
+\draw  (0.6,0.0) rectangle (1.1,0.5) ;
+\draw  (0.6+0.6,0.0) rectangle (1.7,0.5) ;
+\draw[fill=green]  (3*0.6,0.0) rectangle (2.3,0.5) ;
+\draw[fill=green]  (4*0.6,0.0) rectangle (2.9,0.5) ;
+% second row
+\end{tikzpicture}\\
+
+
+\begin{tikzpicture}[scale=0.8]
+\draw node [anchor=south east]{Level 11};
+\draw (0,0) rectangle (0.5,0.5);
+\draw  (0.6,0.0) rectangle (1.1,0.5) ;
+\draw  (0.6+0.6,0.0) rectangle (1.7,0.5) ;
+\draw[fill=green]  (3*0.6,0.0) rectangle (2.3,0.5) ;
+\draw[fill=green]  (4*0.6,0.0) rectangle (2.9,0.5) ;
+% second row
+\end{tikzpicture}
+
+
+\begin{tikzpicture}[scale=0.8]
+\draw node [anchor=south east]{Level 10};
+\draw (0,0) rectangle (0.5,0.5);
+\draw  (0.6,0.0) rectangle (1.1,0.5) ;
+\draw [fill=green](0.6+0.6,0.0) rectangle (1.7,0.5) ;
+\draw[fill=green]  (3*0.6,0.0) rectangle (2.3,0.5) ;
+\draw[fill=green]  (4*0.6,0.0) rectangle (2.9,0.5) ;
+% second row
+\end{tikzpicture}
+
+
+
+\begin{tikzpicture}[scale=0.8]
+\draw node [anchor=south east]{Level 09};
+\draw (0,0) rectangle (0.5,0.5);
+\draw  (0.6,0.0) rectangle (1.1,0.5) ;
+\draw [fill=green] (0.6+0.6,0.0) rectangle (1.7,0.5) ;
+\draw[fill=green]  (3*0.6,0.0) rectangle (2.3,0.5) ;
+\draw[fill=green]  (4*0.6,0.0) rectangle (2.9,0.5) ;
+% second row
+\end{tikzpicture}
+
+\begin{tikzpicture}[scale=0.8]
+\draw node [anchor=south east]{Level 08};
+\draw (0,0) rectangle (0.5,0.5);
+\draw  [fill=green] (0.6,0.0) rectangle (1.1,0.5) ;
+\draw [fill=green] (0.6+0.6,0.0) rectangle (1.7,0.5) ;
+\draw[fill=green]  (3*0.6,0.0) rectangle (2.3,0.5) ;
+\draw[fill=green]  (4*0.6,0.0) rectangle (2.9,0.5) ;
+\node at (4,0.1) {Apart. 90\%};
+% second row
+\end{tikzpicture}
+
+\caption{Rotana Tower Progress, each square represents one separate activity}
+\end{marginfigure}
+
+
+
+%%
+% MERWEB TOWER PROGRESS REPORT
+\definecolor{green}{rgb}{0.1,0.1,0.1}
+\newcommand{\done}{\cellcolor[gray]{0.9}done}  %{0.9}
+\small
+\begin{table}[htbp]
+\caption{Merweb Ceiling and Wall Closure Plan}
+\begin{tabular}{llllll}
+\toprule 
+\multicolumn{6}{c}{\bf Merweb Ceiling and Wall Closure}\\
+\midrule
+~        & Corridor & Pass. lift  & Serv. lift  & Rooms   & Dry walls \\
+Level   &            & lobby             &lobby    &    &              \\ 
+\midrule
+Lvl 43  &             &                &                &             &              \\
+Lvl 41  &             &              &         &     &        \\
+Lvl 40  & \done     &\done&\done&\done&\done\\
+Lvl 39  & \done     &\done&\done&\done&\done\\
+Lvl 38  & \done     &\done&\done&\done&\done\\
+Lvl 37  & \done     &\done&\done&\done&\done\\
+Lvl 36  & \done     &\done&\done&\done&\done\\
+Lvl 35  & \done     &\done&\done&\done&\done\\
+Lvl 34  & \done     &\done&\done&\done&\done\\
+Lvl 33  & \done     &\done&\done&\done&\done\\
+Lvl 32  & \done     &\done&\done&\done&\done\\
+Lvl 31  & \done     &\done&\done&\done&\done\\
+Lvl 30  & \done     &\done&\done&\done&\done\\
+Lvl 29  & \done     &\done&\done&\done&\done\\
+Lvl 28  & \done     & 27 Jul          &27 Jul         &27 Jul        &\done\\
+Lvl 27  & 29 Jul    & 29 Jul   &29 Jul         &29 Jul         &\done \\
+Lvl 26  & 2 Aug    & 2 Aug  & 2 Aug        &2 Aug         &\done \\
+Lvl 25  & 4 Aug    & 4 Aug  & 4 Aug        &4 Aug         &\done \\
+Lvl 24  & 7 Aug    & 7 Aug  & 7 Aug        &7 Aug         &\done \\
+Lvl 23  & 9 Aug    & 9 Aug  & 9 Aug        &9 Aug         & 24 Jul\\
+Lvl 22  & 11 Aug   &11 Aug & 11 Aug        &11 Aug         &26 Jul\\
+Lvl 21  & 14 Aug   &14 Aug  & 14 Aug        &14 Aug         &28 Jul\\
+Lvl 20  & 16 Aug   &16 Aug          &16 Aug         &16 Aug         &30 Jul\\
+Lvl 19  & 18 Aug   &18 Aug           &18 Aug         &18 Aug         &1 Aug\\
+Lvl 18  & 21 Aug   &21 Aug & 21 Aug                  &21 Aug         &3 Aug\\
+Lvl 17  & 23 Aug   &23 Aug  &23 Aug         &23 Aug         &5 Aug\\
+Lvl 16  & 25 Aug   &25 Aug  &25 Aug         &25 Aug         &7 Aug\\
+Lvl 15  & 27 Aug   &27 Aug  &27 Aug         &27 Aug         &9 Aug\\
+Lvl 14  & 30 Aug   &30 Aug  &30 Aug         &30 Aug         &11 Aug\\
+Lvl 13  & 1 Sep     &1 Sep    &1 Sep         &1 Sep         &13 Aug\\
+Lvl 12  & 4 Sep     &4 Sep    & 4 Sep        &4 Sep         &15 Aug\\
+Lvl 11  & 6 Sep     &6 Sep    & 6 Sep        &6 Sep         &17 Aug\\
+Lvl 10  & 8 Sep     &8 Sep    & 8 Sep        &8 Sep         &19 Aug\\
+Lvl 09  & 10 Sep   &10 Sep   & 11 Sep        &11 Sep         &21 Aug\\
+Lvl 08  & 12 Sep   &12 Sep   & 13 Sep        &13 Sep         &23 Aug\\
+Lvl 07  & 15 Sep   &15 Sep   & 15 Sep        &15 Sep         &25 Aug\\
+\bottomrule
+\end{tabular}
+\normalsize
+\end{table}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
