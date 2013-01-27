@@ -34,5 +34,6 @@
 *.pdf
 *.png
 *.jpg
+*.out
 !/graphics/AHU/*
 

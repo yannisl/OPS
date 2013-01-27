@@ -1,11 +1,7 @@
 % !TEX TS-program = pdflatex
 % !TEX encoding = UTF-8 Unicode
 
-% Example of the Memoir class, an alternative to the default LaTeX classes such as article and book, with many added features built into the class itself.
-
-\documentclass[a4paper, oneside, justified=true, sfsidenotes]{tufte-book} % for a long document
-%\documentclass[12pt,a4paper, showtrims]{memoir} % for a short document
-
+\documentclass[a4paper, oneside, justified=true, sfsidenotes]{tufte-book} 
 \usepackage[utf8]{inputenc} % set input encoding to utf8
 \usepackage[greek, french,english]{babel}[2005/11/23]
 \usepackage{lipsum}
@@ -18,9 +14,6 @@
 %% Bibliography
 \usepackage{natbib}
 
-\usepackage{shapepar}
-
-
 \bibliographystyle{plainnat} % note the change here
 \bibpunct{(}{)}{;}{a}{,}{,}
 
@@ -30,28 +23,15 @@
 
 \usepackage{alltt}[1997/06/16]   %% boilerplate, credits, license
 \usepackage{epigraph}
-% use courier acrobat fonts rather than the type writer font
-%\usepackage{courier}
-\usepackage{shapepar}
-\usepackage{lettrine}
 \usepackage{graphicx}
 
-%% Use some archaic fonts for fun
-\usepackage{cypriot}
-\usepackage{hieroglf}
-\usepackage{verbatim}
 \usepackage{caption}
 \DeclareCaptionFont{blue}{\color{blue}}
 \captionsetup{justification=raggedright, singlelinecheck=false,font={blue,sf,small}}
 
-
 \usepgflibrary{shapes.symbols}
 \usetikzlibrary{positioning, shapes, arrows, chains}
 \usepackage{pgfplots}
-%\pgfplotsset{compat=1.3}
-
-
-
 
 %overwrite tufte and have numbering
 \setcounter{secnumdepth}{5}
@@ -213,7 +193,9 @@
 \author{City Center Phase 3a \&3b}
 \publisher{AL HABTOOR-Specon}
 \date{January 2011} % Delete this line to display the current date
-
+\usepackage{fancyvrb}
+\usepackage{float}
+\usepackage{wrapfig}
 
 % Generates the index we use before the
 % out
@@ -222,68 +204,13 @@
 
 
 
-%%% ACTIVITY DATES
-%% Define a new command for activity key-dates
-%% this can be saved for shipout later
-\newcommand{\keydate}[2]{#1  #2 \\}
-\newcommand{\out}[2]{%
-  {\index{key dates!#1}% add to index
-\immediate\write\tempfile{\noexpand\keydate{ #1}{#2}}}}
 
-
-
-
-%% We open the file to  to write the key-dates
-%% we will use it later to import
-\newwrite\tempfile
-\immediate\openout\tempfile=keydates.tex
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-%experimental
-
-%\usepackage{grid}
-% \IfFileExists{txfonts.sty}
-%  {\usepackage{txfonts}}
-%  {\usepackage{times}}
-
-%\usepackage[fontsize=10pt,baseline=14pt,lines=53]{grid}
-%\usepackage{siunitx}
-
-\usepackage{fancyvrb}
-\usepackage{float}
-\usepackage{wrapfig}
-
-%% Using amsmath and amssymbols for 
-%% mathematics
-%% they have better macros that those provided in LaTex or TeX
-%
-\usepackage{amsfonts}
 
 \usepackage{amsmath}
+\usepackage{amsfonts}
 \usepackage{amssymb}[2002/01/22] %% and additional symbols
 
 
-%% Eventually beginning the document
-%% 
-
-\newenvironment{thecode}
-{\noindent\rule{10cm}{0.1pt}\verbatim} %before
-{\endverbatim\noindent\rule{10cm}{0.1pt}}   %after
 
 \usepackage{longtable}
 
@@ -365,7 +292,7 @@
 
 \input{./Sections/definitions}
 
-\SetBgContents{Update $13^{th}$ Jan}
+\SetBgContents{Update $13^{th}$ Jan 2013}
 \BgThispage
 % Front matter
 \frontmatter
@@ -396,66 +323,6 @@
 \input{./sections/handover}
 \input{./sections/businessedge}
 %\input{./manual/blog}
-\end{document}
-\input{./Sections/update-03}
-%Main files start here
-\mainmatter %% Very important to include
-\input{./Sections/CTC}
-\input{./Sections/Materials}
-\input{./Sections/introduction}
-\input{./Sections/towers}
-\input{./Sections/towers-rotana}
-\input{./Sections/towers-shangrila}
-\input{./Sections/towers-merweb}
-\input{./Sections/Podium}
-
-\input{./Sections/chilledwater}
-\input{./Sections/kahraama}
-
-\input{./Sections/HVAC}
-
-\input{./Sections/carparkventilation}
-\input{./Sections/staircasepressurization}
-\input{./Sections/kitchenextract}
-\input{./Sections/smokeexhaust}
-\input{./Sections/generators}
-\input{./Sections/drainage}
-\input{./Sections/domestic}
-\input{./Sections/domestichot}
-\input{./Sections/firefighting}
-
-
-\input{./Sections/electrical}
-\input{./Sections/lvsystems}
-\input{./Sections/bms} 
-
-
-
-\input{./Sections/municipalconnections}
-\input{./Sections/civildefence}
-\input{./sections/logistics}
-\appendix
-\input{./Sections/listofservices}
-%\input{./Sections/mechanicalengineers}
-%\input{./Sections/gantcharts}
-%\input{./Sections/charts}
-%\input{/.Sections/heatgains}
-
-
-%% Example
-%% 
-   
-   \out{Close Ceilings Rotana Floor 10}{Line 2}
-   \out{Rotana,  power-on}{12$^{th}$ Sept 2010}
-   \out{Rotana Qatar Cool switch-on}{12th September}
-
-
-%% we now read the file and dostuff with it
-%% 
-\chapter{Summary of  Key Dates}
-\immediate\closeout\tempfile
-\input{keydates}
-
 
 
 \backmatter
@@ -463,20 +330,10 @@
 %\bibliographystyle{plainnat}
 \printindex
 
-
-
-%% finally we close the file
-%%
-
-
-
-
 \end{document}
 
 
-If the routines are to be integrated with TeX or a TeX-like system optimization should preferably be done at the paragraph level. Consider the text below given by Bishop in his post. The characteristics of the 'rivers' is an advancing front. If the xy positions of the endings of words is captured and one attempts to draw a line through them. If they intersect is not a river. At its extreme at zero angle one would get a figure such as that given by Holkner and the objective function becomes easier to optimize
 
-http://yallara.cs.rmit.edu.au/~aholkner/paper.pdf
 
 
 
