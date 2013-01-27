@@ -32,7 +32,7 @@
 \usepgflibrary{shapes.symbols}
 \usetikzlibrary{positioning, shapes, arrows, chains}
 \usepackage{pgfplots}
-
+\usepackage{comment}
 %overwrite tufte and have numbering
 \setcounter{secnumdepth}{5}
 
@@ -180,14 +180,11 @@
 \newcommand{\theepigraph}[2]{\epigraphhead[30]{\epigraph{#1}{\textit{#2}}}}
 
 
-\newcommand{\latex}{\LaTeX}
-\newcommand{\tex}{\TeX}
-\newcommand{\texbook}{\tex book\  }
+
 
 \newcommand{\bs}{$backslash$}
 
-\newcommand{\BC}{\textsc{bc}}
-\newcommand{\AD}{\textsc{ad}}
+
 
 \title{CONSTRUCTION \\ MANUAL FOR MEP}
 \author{City Center Phase 3a \&3b}
@@ -287,6 +284,9 @@
 \endtikzpicture%
 }
 
+% counter used in tables
+\newcounter{inc}{0}
+\def\inc{\addtocounter{inc}{1}\theinc}
 
 \begin{document}
 
