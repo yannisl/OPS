@@ -36,4 +36,4 @@
 *.jpg
 *.out
 !/OPS/graphics/AHU/*.png
-
+!/graphics/AHU/*/
